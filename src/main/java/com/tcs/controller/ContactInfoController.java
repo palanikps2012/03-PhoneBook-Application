@@ -64,6 +64,8 @@ public class ContactInfoController {
 	public String handleViewContactsLink(Model model) {
 		
 		List<Contact> contactsList=contactService.getAllContacts();
+		System.out.println(contactsList);
+
 		model.addAttribute("contacts",contactsList);
 		return "viewContacts";
 		
