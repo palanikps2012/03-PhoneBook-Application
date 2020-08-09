@@ -22,6 +22,8 @@ public class ContactServiceImpl implements ContactService {
 	public boolean saveContact(Contact c) {
 		
 		ContactEntity entity=new ContactEntity();
+		System.out.println(entity);
+
 		/*
 		 * if(c.getContactId()!=null) { Optional<ContactEntity>
 		 * findById=contactRepo.findById(c); entity=findById.get(); }
